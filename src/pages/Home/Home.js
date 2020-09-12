@@ -6,10 +6,10 @@ import Pagination from "../../components/Pagination/Pagination";
 const Home = () => {
     return (
         <React.Fragment>
-            <div className="container" style={{paddingTop: '6rem'}} >
+            <div className="container" style={{ paddingTop: '8rem' }} >
                 <div className="row">
-                    <FilterBar/>
-                    <ProductList/>
+                    <FilterBar />
+                    <ProductList />
                 </div>
             </div>
         </React.Fragment>
