@@ -4,18 +4,14 @@ import { NavLink } from 'react-router-dom';
 import Background from '../../resources/cars.png';
 import './Header.scss';
 
-var sectionStyle = {
+var headerImgae = {
     width: "100%",
     height: "10%",
     backgroundImage: `url(${Background})`,
     backgroundSize: "cover",
-    // backgroundRepeat: "no-repeat",
-    // backgroundAttachment: "fixed",
     backgroundPosition: "center center",
 };
-var sectionaStyle = {
-    // width: "100%",
-    // height: "10%",
+var menuShadow = {
     backgroundColor: "rgba(0,0,0,0.8)"
 };
 
@@ -23,16 +19,15 @@ var sectionaStyle = {
 const Header = ({ cartLength }) => {
 
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style={sectionStyle}>
-            <div className="container" style={sectionaStyle}>
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style={headerImgae}>
+            <div className="container" style={menuShadow}>
                 <div>
                     <ul className="navbar-nav ml-auto">
                         <li className="nav-item">
-                            <NavLink className="nav-link" to="/">Ecommerce</NavLink>
+                            <NavLink className="nav-link" to="/">Sklep</NavLink>
                         </li>
                         <li className="nav-item">
-
-                            <NavLink className="nav-link" to={"/contact"}>Contact</NavLink>
+                            <NavLink className="nav-link" to={"/contact"}>Kontakt</NavLink>
                         </li>
                     </ul>
                 </div>
@@ -40,7 +35,7 @@ const Header = ({ cartLength }) => {
                     <ul className="navbar-nav ml-auto">
                         <li className="nav-item">
                             <NavLink className="nav-link" to={"/cart"}><i className="fa fa-shopping-cart mr-2"
-                                aria-hidden="true" />Cart {cartLength ? `(${cartLength})` : ''}</NavLink>
+                                aria-hidden="true" />Koszyk {cartLength ? `(${cartLength})` : ''}</NavLink>
                         </li>
                     </ul>
                 </div>

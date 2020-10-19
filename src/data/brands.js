@@ -1,1 +1,1 @@
-export const brands = ["apple","huawei","meizu","samsung","vestel","xiaomi","asus"];
+export const brands = ["Części", "Narzędzia", "Opony", "Felgi", "Samochody"];
